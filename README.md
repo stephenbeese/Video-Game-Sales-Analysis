@@ -3,12 +3,77 @@
 **Video Games Sales Analysis** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+
+This dataset provides information about **video game sales, platforms, publishers, and review scores**, enabling analysis of market trends, platform performance, and the relationship between reviews and sales.
+
+## Structure
+
+* **Rows:** 16,719
+* **Columns:** 16
+
+| Column            | Data Type | Description                                                    |
+| ----------------- | --------- | -------------------------------------------------------------- |
+| `Name`            | `object`  | Title of the video game                                        |
+| `Platform`        | `object`  | Platform(s) where the game was released (e.g., Wii, PS4, X360) |
+| `Year_of_Release` | `float64` | Release year of the game (some missing values)                 |
+| `Genre`           | `object`  | Game genre (e.g., Sports, Action, Role-Playing)                |
+| `Publisher`       | `object`  | Company that published the game                                |
+| `NA_Sales`        | `float64` | Sales in North America (millions of units)                     |
+| `EU_Sales`        | `float64` | Sales in Europe (millions of units)                            |
+| `JP_Sales`        | `float64` | Sales in Japan (millions of units)                             |
+| `Other_Sales`     | `float64` | Sales in other regions (millions of units)                     |
+| `Global_Sales`    | `float64` | Total worldwide sales (millions of units)                      |
+| `Critic_Score`    | `float64` | Average critic review score (0–100)                            |
+| `Critic_Count`    | `float64` | Number of critic reviews                                       |
+| `User_Score`      | `float64` | Average user review score (0–10)                               |
+| `User_Count`      | `float64` | Number of user ratings                                         |
+| `Developer`       | `object`  | Company that developed the game                                |
+| `Rating`          | `object`  | ESRB rating (e.g., E, T, M)                                    |
+
+---
+
+## Data Quality
+
+* **Complete:** Sales columns (`NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales`, `Global_Sales`).
+* **Partially missing:**
+
+  * `Critic_Score` & `Critic_Count` — ~50%
+  * `User_Score` & `User_Count` — ~55%
+  * `Developer` & `Rating` — ~40%
+  * `Year_of_Release` — 269 rows
+
+---
+
+## Example Records
+
+![Example Record](images/dataset-example.png)
+
+---
+
+## Notes
+
+* Designed for **sales analysis**, **platform/vendor comparisons**, and **review impact studies**.
+* Filtering may be required if focusing on games with critic or user review data.
+
+---
 
 
 ## Business Requirements
-* Describe your business requirements
 
+The aim of this project is to clean, transform, and analyse historical video game sales data to support decision-making within the games industry.  
+The key requirements are:
+
+- **Understand sales performance** — Provide clear insights into global and regional sales trends (NA, EU, JP, Other) to identify high-performing games and platforms.
+- **Platform strategy** — Compare sales across consoles and publishers to guide platform investment (e.g., Nintendo vs Sony vs Microsoft vs Other).
+- **First-party vs third-party performance** — Identify how first-party titles perform compared with third-party titles to inform partnerships and exclusivity decisions.
+- **Release planning** — Analyse the relationship between release year and sales to help forecast the potential success of upcoming game launches.
+- **Data quality and consistency** — Clean and standardise raw data by handling missing values, merging duplicates, and creating derived features (e.g., `is_multiplatform`, `is_first_party`).
+- **Flexible data exports** — Provide multiple cleaned CSV outputs for different analysis needs:
+  - Sales-only dataset (no review data)
+  - Merged multi-platform dataset (one row per title)
+  - Review-focused dataset (only games with critic/user review data)
+
+This analysis will help **publishers, developers, and analysts** make evidence-based decisions about platform focus, partnerships, and release timing.
 
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them) 
