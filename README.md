@@ -50,7 +50,7 @@ This dataset provides information about **video game sales, platforms, publisher
 
 ---
 
-## Notes
+### Notes
 
 * Designed for **sales analysis**, **platform/vendor comparisons**, and **review impact studies**.
 * Filtering may be required if focusing on games with critic or user review data.
@@ -75,8 +75,70 @@ The key requirements are:
 
 This analysis will help **publishers, developers, and analysts** make evidence-based decisions about platform focus, partnerships, and release timing.
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+## Hypothesis and how to validate
+
+### Hypothesis 1 — **Critic reviews drive sales**
+
+> Games with higher critic scores are associated with higher global sales.
+
+* **Preparation:** Filter out rows with missing `Critic_Score`.
+* **Validation:**
+
+  * Visualise a scatter plot of `Critic_Score` vs `Global_Sales` with a regression line.
+  * Bubble size represents `Critic_Count`.
+* **Acceptance criteria:** A statistically significant positive correlation (p < 0.05) and a meaningful effect size (e.g., a 10-point increase in critic score results in a noticeable sales uplift).
+
+---
+
+### Hypothesis 2 — **User reviews drive sales**
+
+> Games with higher user scores are associated with higher global sales.
+
+* **Preparation:** Filter out rows with missing `User_Score`.
+* **Validation:**
+
+  * Scatter plot of `User_Score` vs `Global_Sales` with regression line.
+  * Bubble size represents `User_Count`.
+* **Acceptance criteria:** A statistically significant positive correlation (p < 0.05) between user score and sales.
+
+---
+
+### Hypothesis 3 — **Platform strength varies by region**
+
+> Nintendo platforms outperform in Japan, while Sony and Microsoft dominate in North America and Europe.
+
+* **Preparation:** Map platforms to vendors (Nintendo, Sony, Microsoft, Other).
+* **Validation:**
+
+  * Grouped bar charts of mean `JP_Sales`, `NA_Sales` and `EU_Sales` by vendor.
+  * Use ANOVA and post-hoc Tukey tests to confirm differences between vendors.
+* **Acceptance criteria:** Nintendo’s average sales are significantly higher in Japan, while Sony/Microsoft show higher averages in NA and EU.
+
+---
+
+### Hypothesis 4 — **Multi-platform advantage**
+
+> Games released on multiple platforms sell more globally than single-platform titles.
+
+* **Preparation:** Create a boolean column `is_multiplatform` (True if a game is available on ≥2 platforms).
+* **Validation:**
+
+  * Boxplots or violin plots comparing `Global_Sales` for multi-platform vs single-platform games.
+* **Acceptance criteria:** Multi-platform games show significantly higher global sales (e.g., Mann–Whitney U or t-test).
+
+---
+
+### Hypothesis 5 — **First-party advantage**
+
+> First-party games (published by the platform owner) outperform third-party titles on the same platform.
+
+* **Preparation:** Create `is_first_party` column by checking if publisher matches platform owner (e.g., Nintendo on Wii/DS, Sony on PlayStation, Microsoft on Xbox).
+* **Validation:**
+
+  * Bar charts comparing mean `Global_Sales` for first-party vs third-party games, grouped by platform vendor.
+* **Acceptance criteria:** First-party games have significantly higher mean sales on their respective platforms (t-test or Mann–Whitney U).
+
+---
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
