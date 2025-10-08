@@ -210,3 +210,18 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project.
+
+
+## Additional Information & Definitions
+
+
+### Core Statistical Concepts
+
+* **Mean** — Average of all values; shows the dataset’s centre. *(Add up all values and divide by how many there are)*
+* **Median** — Middle value when data are ordered. *(Put numbers in order; pick the middle one — if even count, average the two middle ones)*
+* **Standard Deviation (SD)** — How spread out values are around the mean. *(Work out how far each value is from the mean on average)*
+* **Probability** — Likelihood of an event. *(Number of ways something can happen ÷ total possible outcomes; between 0 and 1)*
+* **Hypothesis Testing** — Checks if a pattern or difference is likely real or just chance. *(Start with “no difference” and test against your data)*
+* **t-Test** — Compares the averages of two groups to see if any difference is meaningful, not just random.
+
+**Why it matters:** These basics help summarise data, see how reliable it is, and make informed decisions from evidence.
