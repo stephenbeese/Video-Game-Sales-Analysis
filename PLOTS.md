@@ -31,3 +31,16 @@ Same as above but excludes games selling >20M units to reduce distortion and bet
 Scatter plot showing User_Score vs `Global_Sales`. Bubble size = `User_Count` includes regression line and outliers.
 
 ---
+
+### 6. Total Regional Game Sales by Platform Vendor
+![Total Regional Game Sales by Platform Vendor](images/visualisations/total_platform_sales_by_region.png)  
+Barplot showing total sales per platform venor by region
+
+---
+
+### 7. Average Regional Game Sales by Platform Vendor
+![Average Regional Game Sales by Platform Vendor](images/visualisations/avg_platform_sales_by_region.png)  
+Barplot showing average (mean) sales per platform venor by region
+
+---
+
