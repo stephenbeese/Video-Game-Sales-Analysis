@@ -47,3 +47,23 @@ Barplot showing average (mean) sales per platform venor by region
 ### 8. Global Sales Comparison: Multi-Platform vs Exclusive Games (Log Scale)
 ![Global Sales Comparison: Multi-Platform vs Exclusive Games (Log Scale)](images/visualisations/multiplatform_vs_exclusive.png)  
 Box plot comparing Multi-Platform vs Exclusive Games Sales 
+
+---
+
+### 9. Average Sales by Region - First party vs Third party
+![Average Sales by Region - First party vs Third party](images/visualisations/avg_sales_first_vs_third_party_by_region.png)  
+Bar charts comparing the average sales per game for first-party and third-party titles across all major regions.
+
+---
+
+### 10. Total Regional Sales - First party vs Third party
+![Total Regional Sales - First party vs Third party](images/visualisations/total_sales_first_vs_third_party_by_region.png)  
+Bar charts showing total cumulative sales for first-party and third-party games in each global region.
+
+---
+
+### 11. Global Sales Overview - First party vs Third party
+![## Global Sales Overview - First party vs Third party](images/visualisations/global_sales_first_vs_third_party.png)  
+Side-by-side comparison of total and average global sales for first-party and third-party games.
+
+---
