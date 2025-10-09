@@ -44,3 +44,6 @@ Barplot showing average (mean) sales per platform venor by region
 
 ---
 
+### 8. Global Sales Comparison: Multi-Platform vs Exclusive Games (Log Scale)
+![Global Sales Comparison: Multi-Platform vs Exclusive Games (Log Scale)](images/visualisations/multiplatform_vs_exclusive.png)
+Box plot comparing Multi-Platform vs Exclusive Games Sales 
