@@ -26,3 +26,8 @@ Same as above but excludes games selling >20M units to reduce distortion and bet
 
 ---
 
+### 5. User Score vs Global Sales
+![User Score vs Global Sales](images/visualisations/user_score_vs_global_sales.png)  
+Scatter plot showing User_Score vs `Global_Sales`. Bubble size = `User_Count` includes regression line and outliers.
+
+---
