@@ -28,7 +28,7 @@ def run_anova_by_region(df, regions, vendors):
     return results
 
 
-def run_tukey_by_region(df, regions):
+def run_tukey_by_region(df, regions, print_results=True):
     """
     Runs Tukey's HSD post-hoc tests for each region to identify
     which vendor sales differ significantly.
@@ -43,6 +43,6 @@ def run_tukey_by_region(df, regions):
         data = df[["Vendor", region]].dropna()
 
         tukey = pairwise_tukeyhsd(endog=data[region], groups=data["Vendor"], alpha=0.05)
-
-        print(f"\n Tukey HSD Results for {region.replace('_Sales', '')}:")
-        print(tukey.summary())
+        if print_results:
+            print(f"\n Tukey HSD Results for {region.replace('_Sales', '')}:")
+            print(tukey.summary())
