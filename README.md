@@ -172,13 +172,77 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 * Were there any data privacy, bias or fairness issues with the data?
 * How did you overcome any legal or societal issues?
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+## Dashboard
+
+### Dashboard Wireframe
+
+![Dashboard Wireframe](images/wireframes/wireframe.png)
+
+---
+
+## Dashboard Design Choices 
+
+The *Video Game Sales Analysis Dashboard* was designed to explore the hypothesis that **video game performance is influenced by region, platform strategy, and critic reception**. The layout follows a top-down approach, moving from global insights to detailed comparisons, enabling both casual viewers and analysts to draw meaningful conclusions.
+
+---
+
+### Top-Level KPIs for Immediate Insight
+
+At the top, headline metrics such as **Total Global Sales, Average Sales per Game, Total Games, and Top-Selling Genre/Game** provide instant context. These KPIs quickly answer high-level questions and set the stage for more detailed exploration, supporting an understanding of overall market scale.
+
+
+### Global Trends Over Time
+
+The **Sales Over Time** chart visualises the evolution of industry performance. This helps reveal whether market growth aligns with major releases, changing generations, or critical reception.
+
+### Regional Variation & Market Preferences
+
+A **global map** illustrates sales distribution by region (e.g., North America, Europe, Japan). This enables hypotheses testing around regional preferences—such as whether certain regions favour exclusive titles, franchises, or specific genres.
+
+
+### Critic Influence & Sales Correlation
+
+The **Critic Score vs Global Sales** scatterplot examines whether highly-rated games perform better commercially. Outliers and clusters help reveal cases where brand power outweighs critic scores or where critical success translates to strong sales.
+
+
+### First vs Third Party & Multiplatform vs Exclusive
+
+Comparative bar charts allow users to analyse platform strategy:
+
+* **First vs Third Party** (publisher impact),
+* **Multiplatform vs Exclusive** (distribution strategy).
+
+These visuals support strategic conclusions about reach, brand loyalty, and market penetration.
+
+
+### Filters for Deeper Exploration
+
+Interactive filters such as **Region, Year, Genre, Platform, and Sales View (Total vs Average)** empower users to **drill down** and personalise analysis. This flexibility makes it possible to test the hypothesis across multiple dimensions—transforming the dashboard into a dynamic exploration tool rather than a static summary.
+
+
+### Final Thought
+
+The dashboard was deliberately structured to make **complex insights accessible**. By combining KPIs, trends, comparisons, and interactive controls, it enables both technical and non-technical audiences to uncover patterns, challenge assumptions, and draw informed conclusions about what drives video game success.
+
+### Dashboard pages
+
+| Page Name                                        | Chart Type(s)                        | Description                                                                 | Link |
+|--------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------|------|
+| **Sales Over Time**                               | Line Chart                           | Shows sales trends over time, filtered by region and year.                  | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/SalesOverTime?publish=yes) |
+| **Total Global Sales**                            | KPI / Text Card                      | Displays the total cumulative sales of all games across selected regions.   | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TotalGlobalSales?publish=yes) |
+| **Average Sales per Game**                        | KPI / Text Card                      | Shows average sales per game (Total sales ÷ number of games).               | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/AverageSalesperGame?publish=yes) |
+| **Regional Distribution of Video Games Sales**    | Map (Symbol/Filled)                  | Visualises geographic distribution of sales across global regions.          | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/RegionalDistributionofVideoGamesSales?publish=yes) |
+| **Impact of Critic Rating on Global Video Games Sales** | Scatter Plot + Trendline      | Analyses correlation between critic scores and sales performance.           | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/ImpactofCriticRatingonGlobalVideoGamesSales?publish=yes) |
+| **Sales Comparison – First vs Third Party**       | Bar Chart                            | Compares sales of first-party vs third-party published games.               | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/SalesComparison-FirstvsThirdParty?publish=yes) |
+| **Sales Comparison – Multiplatform vs Exclusive** | Bar Chart                            | Compares performance between exclusive and multiplatform titles.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/SalesComparison-MultiplatformvsExclusive?publish=yes) |
+| **Total Games**                                   | KPI / Text Card                      | Shows total number of games under current region and filters.               | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TotalGames?publish=yes) |
+| **Top-Selling Game**                              | KPI / Text Card                      | Displays the highest-selling video game dynamically by region.              | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGame?publish=yes) |
+| **Top-Selling Genre**                             | KPI / Text Card                      | Shows the genre with the highest total sales in selected region.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGenre?publish=yes) |
+| **Video Game Sales Analysis Dashboard**           | Full Interactive Dashboard           | Combined dashboard containing all KPIs, charts, and interactive filters.    | [View Full Dashboard](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes) |
+
 
 ## Unfixed Bugs
+
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
