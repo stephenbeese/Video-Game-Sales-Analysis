@@ -50,13 +50,6 @@ This dataset provides information about **video game sales, platforms, publisher
 
 ---
 
-### Notes
-
-* Designed for **sales analysis**, **platform/vendor comparisons**, and **review impact studies**.
-* Filtering may be required if focusing on games with critic or user review data.
-
----
-
 
 ## Business Requirements
 
@@ -110,7 +103,7 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 * **Preparation:** Map platforms to vendors (Nintendo, Sony, Microsoft, Other).
 * **Validation:**
 
-  * Grouped bar charts of mean `JP_Sales`, `NA_Sales` and `EU_Sales` by vendor.
+  * Grouped bar charts of `JP_Sales`, `NA_Sales` and `EU_Sales` by vendor.
   * Use ANOVA and post-hoc Tukey tests to confirm differences between vendors.
 * **Acceptance criteria:** Nintendo’s average sales are significantly higher in Japan, while Sony/Microsoft show higher averages in NA and EU.
 
@@ -224,6 +217,8 @@ Interactive filters such as **Region, Year, Genre, Platform, and Sales View (Tot
 
 The dashboard was deliberately structured to make **complex insights accessible**. By combining KPIs, trends, comparisons, and interactive controls, it enables both technical and non-technical audiences to uncover patterns, challenge assumptions, and draw informed conclusions about what drives video game success.
 
+---
+
 ### Dashboard pages
 
 | Page Name                                        | Chart Type(s)                        | Description                                                                 | Link |
@@ -248,10 +243,30 @@ The dashboard was deliberately structured to make **complex insights accessible*
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+
+### Project Challenges
+
+| **Challenge**                                                                                             | **Strategy to Overcome**                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Complex Data Cleaning & Merging** (multiple sources with missing values, inconsistent platform formats) | Used **Pandas** to standardise fields, merge and split data, and create new calculated fields such as `is_multiplatform`. |
+| **Region Filtering Not Working in Tableau** (due to long-format region/sales fields)                      | Designed a **Region Selector parameter** with calculated logic to dynamically control which region metric was displayed.                                                           |
+| **Calculating Accurate Averages per Game**                                                                | Used **LOD expressions** (`{ FIXED }`) to compute game-level totals and counts, preventing aggregation errors and ensuring accurate average sales in Tableau.                                             |
+| **Visual clarity with overlapping scatter points** (Critic Score vs Sales)                                | Introduced **mark transparency**, sorted axes, and tooltips with context (Number of Reviews, Title) to enhance readability and interpretability.                                                          |
+| **Validating Hypothesis (e.g. Critic influence, Genre dominance)**                                        | Applied Python **statistical testing** (`ANOVA`, `Tukey HSD`, `t-test`, `linregress`) before visualisation to ensure dashboard insights were statistically valid, not just visual patterns.               |
+
+### Future Developments
+
+| **Area for Growth**              | **Planned Skill/Tool to Learn**                 | **Reason**                                                                                        |
+| -------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Advanced Dashboard Interactivity | **Tableau Actions, Parameters & Set Controls**  | To enable cross-chart interactions (e.g. clicking a genre to isolate it across all charts).       |
+| Predictive Analytics             | **Machine Learning (Regression, Forecasting)**  | To explore predictive sales modelling based on critic scores, platform, genre, and region trends. |
+| Data Engineering                 | **SQL & Cloud Databases (BigQuery/PostgreSQL)** | For handling larger datasets and automating data pipelines rather than manual CSV imports.        |
+| Visual Design & UX               | **Figma / Tableau UX Best Practices**           | To further improve storytelling and layout consistency in dashboards for professional delivery.   |
+
+
 
 ## Main Data Analysis Libraries
+
 | **Library / Function**                | **How It Was Used in the Project**                                                                                                                                                             |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Python**                            | Main programming language used for data preprocessing, statistical testing, and exploratory visualisation prior to dashboard development.                                                      |
