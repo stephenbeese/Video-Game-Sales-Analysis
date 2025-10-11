@@ -252,29 +252,36 @@ The dashboard was deliberately structured to make **complex insights accessible*
 * What new skills or tools do you plan to learn next based on your project experience? 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+| **Library / Function**                | **How It Was Used in the Project**                                                                                                                                                             |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Python**                            | Main programming language used for data preprocessing, statistical testing, and exploratory visualisation prior to dashboard development.                                                      |
+| **Pandas**                            | Used for data loading, cleaning, merging datasets, handling missing values, and preparing data frames for analysis and export to Tableau.                                                      |
+| **NumPy**                             | Provided array-based operations and numerical calculations to support Pandas and custom metric creation.                                                                                       |
+| **Matplotlib**                        | Created early exploratory plots (trends, line charts, sales distributions) for understanding data before dashboard visualisation.                                                              |
+| **Seaborn**                           | Used for statistical visualisations (scatter plots with regression lines, boxplots, heatmaps) to identify patterns such as genre performance and critic influence.                             |
+| **Plotly**                           | Used to create interactive statistical visualisations such as box plots, particularly for comparing sales distributions between multiplatform vs exclusive games. Log-scale axis was applied to reveal spread, median, and outliers—helping validate sales inequality before creating comparative charts in Tableau.                                                   |
+| **SciPy – `f_oneway`**                | Performed **ANOVA (Analysis of Variance)** to test whether average sales differed significantly between multiple genres or platforms.                                                          |
+| **SciPy – `linregress`**              | Conducted **linear regression analysis** (slope, intercept, r-value) to validate the relationship between critic score and sales, supporting correlation insights later visualised in Tableau. |
+| **SciPy – `ttest_ind`**               | Ran **two-sample t-tests** to compare mean sales between two independent groups (e.g., First vs Third Party, Exclusive vs Multiplatform).                                                      |
+| **SciPy – `mannwhitneyu`**            | Used as a **non-parametric alternative** to t-test (when sales data was not normally distributed) to compare median performance between two groups.                                            |
+| **Statsmodels – `pairwise_tukeyhsd`** | Applied **post-hoc Tukey HSD testing** after ANOVA to identify which specific genres/platforms differed significantly in mean sales.                                                           |
+| **Tableau Desktop / Tableau Public**  | Used to build final interactive dashboards with KPIs, regional filtering, trend analysis, genre insights, and hypothesis validation.                                                           |
+
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- [Dataset Source](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv) - Kaggle
+- [Pandas Documentation](https://pandas.pydata.org/pandas-docs/version/2.1/index.html)
+- [NumPy Documentation](https://numpy.org/doc/1.26/)
+- [SciPy Documentation](https://docs.scipy.org/doc/scipy/)
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- All images used are screenshots of personal work.
 
-
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
-
+---
 
 ## Additional Information & Definitions
 
@@ -288,4 +295,4 @@ The dashboard was deliberately structured to make **complex insights accessible*
 * **Hypothesis Testing** — Checks if a pattern or difference is likely real or just chance. *(Start with “no difference” and test against your data)*
 * **t-Test** — Compares the averages of two groups to see if any difference is meaningful, not just random.
 
-**Why it matters:** These basics help summarise data, see how reliable it is, and make informed decisions from evidence.
+These basics help summarise data, see how reliable it is, and make informed decisions from evidence.
