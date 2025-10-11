@@ -1,53 +1,52 @@
-# Video Games Sales Analysis
+# Video Game Sales Analysis
 
 **Video Game Sales Analysis** is a data-driven research project designed to investigate global video game market performance using statistical analysis and interactive visualisation. The project explores how factors such as **region, platform strategy, genre, and critic reception** influence sales outcomes. By combining **Python-based exploratory analysis** with an interactive **Tableau dashboard**, it enables users to drill down into trends, compare publishing strategies, and validate industry hypotheses with evidence.
 
 ---
 
 <details>
-<summary><strong>Table of Contents (Click to Expand)</strong></summary>
+<summary><strong>📌 Table of Contents (Click to Expand)</strong></summary>
 
-- [Useful Links](#useful-links)  
-- [Dataset Content](#dataset-content)  
-- [Structure](#structure)  
-- [Data Quality](#data-quality)  
-- [Example Records](#example-records)  
-- [Business Requirements](#business-requirements)  
-- [Hypothesis and how to validate](#hypothesis-and-how-to-validate)  
-  - [Hypothesis 1 — Critic reviews drive sales](#hypothesis-1--critic-reviews-drive-sales)  
-  - [Hypothesis 2 — User reviews drive sales](#hypothesis-2--user-reviews-drive-sales)  
-  - [Hypothesis 3 — Platform strength varies by region](#hypothesis-3--platform-strength-varies-by-region)  
-  - [Hypothesis 4 — Multi-platform advantage](#hypothesis-4--multi-platform-advantage)  
-  - [Hypothesis 5 — First-party advantage](#hypothesis-5--first-party-advantage)  
-- [Project Plan](#project-plan)  
-  - [Sprint Timeline](#sprint-timeline)  
-- [The rationale to map the business requirements to the Data Visualisations](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations)  
-- [Analysis techniques used](#analysis-techniques-used)  
-- [Ethical considerations](#ethical-considerations)  
-- [Dashboard](#dashboard)  
-  - [Dashboard Wireframe](#dashboard-wireframe)  
-- [Dashboard Design Choices](#dashboard-design-choices)  
-  - [Top-Level KPIs for Immediate Insight](#top-level-kpis-for-immediate-insight)  
-  - [Global Trends Over Time](#global-trends-over-time)  
-  - [Regional Variation & Market Preferences](#regional-variation--market-preferences)  
-  - [Critic Influence & Sales Correlation](#critic-influence--sales-correlation)  
-  - [First vs Third Party & Multiplatform vs Exclusive](#first-vs-third-party--multiplatform-vs-exclusive)  
-  - [Filters for Deeper Exploration](#filters-for-deeper-exploration)  
-  - [Final Thought](#final-thought)  
-  - [Dashboard pages](#dashboard-pages)  
-- [Unfixed Bugs](#unfixed-bugs)  
-- [Development Roadmap](#development-roadmap)  
-  - [Project Challenges](#project-challenges)  
-  - [Future Developments](#future-developments)  
-- [Main Data Analysis Libraries](#main-data-analysis-libraries)  
-- [Credits](#credits)  
-  - [Content](#content)  
-  - [Media](#media)  
-- [Additional Information & Definitions](#additional-information--definitions)  
-  - [Core Statistical Concepts](#core-statistical-concepts)  
-
+- [Video Game Sales Analysis](#video-game-sales-analysis)  
+  - [Useful Links](#useful-links)  
+  - [Dataset Content](#dataset-content)  
+  - [Structure](#structure)  
+  - [Data Quality](#data-quality)  
+  - [Example Records](#example-records)  
+  - [Business Requirements](#business-requirements)  
+  - [Hypothesis and how to validate](#hypothesis-and-how-to-validate)  
+    - [Hypothesis 1 — Critic reviews drive sales](#hypothesis-1--critic-reviews-drive-sales)  
+    - [Hypothesis 2 — User reviews drive sales](#hypothesis-2--user-reviews-drive-sales)  
+    - [Hypothesis 3 — Platform strength varies by region](#hypothesis-3--platform-strength-varies-by-region)  
+    - [Hypothesis 4 — Multi-platform advantage](#hypothesis-4--multi-platform-advantage)  
+    - [Hypothesis 5 — First-party advantage](#hypothesis-5--first-party-advantage)  
+  - [Project Plan](#project-plan)  
+    - [Sprint Timeline](#sprint-timeline)  
+  - [The rationale to map the business requirements to the Data Visualisations](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations)  
+  - [Analysis techniques used](#analysis-techniques-used)  
+  - [Ethical considerations](#ethical-considerations)  
+  - [Dashboard](#dashboard)  
+    - [Dashboard Wireframe](#dashboard-wireframe)  
+  - [Dashboard Design Choices](#dashboard-design-choices)  
+    - [Top-Level KPIs for Immediate Insight](#top-level-kpis-for-immediate-insight)  
+    - [Global Trends Over Time](#global-trends-over-time)  
+    - [Regional Variation & Market Preferences](#regional-variation--market-preferences)  
+    - [Critic Influence & Sales Correlation](#critic-influence--sales-correlation)  
+    - [First vs Third Party & Multiplatform vs Exclusive](#first-vs-third-party--multiplatform-vs-exclusive)  
+    - [Filters for Deeper Exploration](#filters-for-deeper-exploration)  
+    - [Final Thought](#final-thought)  
+    - [Dashboard pages](#dashboard-pages)  
+  - [Unfixed Bugs](#unfixed-bugs)  
+  - [Development Roadmap](#development-roadmap)  
+    - [Project Challenges](#project-challenges)  
+    - [Future Developments](#future-developments)  
+  - [Main Data Analysis Libraries](#main-data-analysis-libraries)  
+  - [Credits](#credits)  
+    - [Content](#content)  
+    - [Media](#media)  
+  - [Additional Information & Definitions](#additional-information--definitions)  
+    - [Core Statistical Concepts](#core-statistical-concepts)  
 </details>
-
 
 ---
 
@@ -59,9 +58,13 @@
  - [Visualisation Notebook](jupyter_notebooks/visualisations.ipynb)
  - [Final Conclusions](jupyter_notebooks/visualisations.ipynb#final-conclusions)
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ## Dataset Content
 
 This dataset provides information about **video game sales, platforms, publishers, and review scores**, enabling analysis of market trends, platform performance, and the relationship between reviews and sales.
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Structure
 
@@ -89,6 +92,8 @@ This dataset provides information about **video game sales, platforms, publisher
 
 ---
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ## Data Quality
 
 * **Complete:** Sales columns (`NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales`, `Global_Sales`).
@@ -101,12 +106,15 @@ This dataset provides information about **video game sales, platforms, publisher
 
 ---
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ## Example Records
 
 ![Example Record](images/dataset-example.png)
 
 ---
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Business Requirements
 
@@ -125,6 +133,8 @@ The key requirements are:
 
 This analysis will help **publishers, developers, and analysts** make evidence-based decisions about platform focus, partnerships, and release timing.
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ## Hypothesis and how to validate
 
 ### Hypothesis 1 — **Critic reviews drive sales**
@@ -142,6 +152,8 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
 ---
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ### Hypothesis 2 — **User reviews drive sales**
 
 > Games with higher user scores are associated with higher global sales.
@@ -155,8 +167,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
 - [Hypothesis 2 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-2--user-reviews-drive-sales)
 
-
 ---
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ### Hypothesis 3 — **Platform strength varies by region**
 
@@ -171,8 +184,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
 - [Hypothesis 3 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-3--platform-strength-varies-by-region)
 
-
 ---
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ### Hypothesis 4 — **Multi-platform advantage**
 
@@ -186,9 +200,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
 - [Hypothesis 4 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-4--multi-platform-advantage)
 
-
-
 ---
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ### Hypothesis 5 — **First-party advantage**
 
@@ -202,8 +216,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
 - [Hypothesis 5 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-5--first-party-advantage)
 
-
 ---
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
@@ -223,9 +238,12 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 | **Sprint 5 — Dashboard Development**                    | **11 – 12 Oct** | Build an interactive Tableau dashboard to present sales patterns, platform comparisons, and review-driven trends in a clear, business-friendly format.                                        |
 | **Sprint 6 — Documentation & Wrap-up**                  | **13 Oct**      | Finalise the README with business requirements, methodology, and insights. Export cleaned CSV datasets and prepare the project for handover or stakeholder review.                            |
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
@@ -233,9 +251,13 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
 * How did you overcome any legal or societal issues?
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Dashboard
 
@@ -244,6 +266,8 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 ![Dashboard Wireframe](images/wireframes/wireframe.png)
 
 ---
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Dashboard Design Choices 
 
@@ -255,7 +279,6 @@ The *Video Game Sales Analysis Dashboard* was designed to explore the hypothesis
 
 At the top, headline metrics such as **Total Global Sales, Average Sales per Game, Total Games, and Top-Selling Genre/Game** provide instant context. These KPIs quickly answer high-level questions and set the stage for more detailed exploration, supporting an understanding of overall market scale.
 
-
 ### Global Trends Over Time
 
 The **Sales Over Time** chart visualises the evolution of industry performance. This helps reveal whether market growth aligns with major releases, changing generations, or critical reception.
@@ -264,11 +287,9 @@ The **Sales Over Time** chart visualises the evolution of industry performance. 
 
 A **global map** illustrates sales distribution by region (e.g., North America, Europe, Japan). This enables hypotheses testing around regional preferences—such as whether certain regions favour exclusive titles, franchises, or specific genres.
 
-
 ### Critic Influence & Sales Correlation
 
 The **Critic Score vs Global Sales** scatterplot examines whether highly-rated games perform better commercially. Outliers and clusters help reveal cases where brand power outweighs critic scores or where critical success translates to strong sales.
-
 
 ### First vs Third Party & Multiplatform vs Exclusive
 
@@ -279,17 +300,15 @@ Comparative bar charts allow users to analyse platform strategy:
 
 These visuals support strategic conclusions about reach, brand loyalty, and market penetration.
 
-
 ### Filters for Deeper Exploration
 
 Interactive filters such as **Region, Year, Genre, Platform, and Sales View (Total vs Average)** empower users to **drill down** and personalise analysis. This flexibility makes it possible to test the hypothesis across multiple dimensions—transforming the dashboard into a dynamic exploration tool rather than a static summary.
-
 
 ### Final Thought
 
 The dashboard was deliberately structured to make **complex insights accessible**. By combining KPIs, trends, comparisons, and interactive controls, it enables both technical and non-technical audiences to uncover patterns, challenge assumptions, and draw informed conclusions about what drives video game success.
 
----
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ### Dashboard pages
 
@@ -307,12 +326,15 @@ The dashboard was deliberately structured to make **complex insights accessible*
 | **Top-Selling Genre**                             | KPI / Text Card                      | Shows the genre with the highest total sales in selected region.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGenre?publish=yes) |
 | **Video Game Sales Analysis Dashboard**           | Full Interactive Dashboard           | Combined dashboard containing all KPIs, charts, and interactive filters.    | [View Full Dashboard](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes) |
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Unfixed Bugs
 
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Development Roadmap
 
@@ -335,7 +357,7 @@ The dashboard was deliberately structured to make **complex insights accessible*
 | Data Engineering                 | **SQL & Cloud Databases (BigQuery/PostgreSQL)** | For handling larger datasets and automating data pipelines rather than manual CSV imports.        |
 | Visual Design & UX               | **Figma / Tableau UX Best Practices**           | To further improve storytelling and layout consistency in dashboards for professional delivery.   |
 
-
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Main Data Analysis Libraries
 
@@ -346,7 +368,7 @@ The dashboard was deliberately structured to make **complex insights accessible*
 | **NumPy**                             | Provided array-based operations and numerical calculations to support Pandas and custom metric creation.                                                                                       |
 | **Matplotlib**                        | Created early exploratory plots (trends, line charts, sales distributions) for understanding data before dashboard visualisation.                                                              |
 | **Seaborn**                           | Used for statistical visualisations (scatter plots with regression lines, boxplots, heatmaps) to identify patterns such as genre performance and critic influence.                             |
-| **Plotly**                           | Used to create interactive statistical visualisations such as box plots, particularly for comparing sales distributions between multiplatform vs exclusive games. Log-scale axis was applied to reveal spread, median, and outliers—helping validate sales inequality before creating comparative charts in Tableau.                                                   |
+| **Plotly**                            | Used to create interactive statistical visualisations such as box plots, particularly for comparing sales distributions between multiplatform vs exclusive games. Log-scale axis was applied to reveal spread, median, and outliers—helping validate sales inequality before creating comparative charts in Tableau. |
 | **SciPy – `f_oneway`**                | Performed **ANOVA (Analysis of Variance)** to test whether average sales differed significantly between multiple genres or platforms.                                                          |
 | **SciPy – `linregress`**              | Conducted **linear regression analysis** (slope, intercept, r-value) to validate the relationship between critic score and sales, supporting correlation insights later visualised in Tableau. |
 | **SciPy – `ttest_ind`**               | Ran **two-sample t-tests** to compare mean sales between two independent groups (e.g., First vs Third Party, Exclusive vs Multiplatform).                                                      |
@@ -354,6 +376,7 @@ The dashboard was deliberately structured to make **complex insights accessible*
 | **Statsmodels – `pairwise_tukeyhsd`** | Applied **post-hoc Tukey HSD testing** after ANOVA to identify which specific genres/platforms differed significantly in mean sales.                                                           |
 | **Tableau Desktop / Tableau Public**  | Used to build final interactive dashboards with KPIs, regional filtering, trend analysis, genre insights, and hypothesis validation.                                                           |
 
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Credits 
 
@@ -370,8 +393,9 @@ The dashboard was deliberately structured to make **complex insights accessible*
 
 ---
 
-## Additional Information & Definitions
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
+## Additional Information & Definitions
 
 ### Core Statistical Concepts
 
@@ -383,3 +407,5 @@ The dashboard was deliberately structured to make **complex insights accessible*
 * **t-Test** — Compares the averages of two groups to see if any difference is meaningful, not just random.
 
 These basics help summarise data, see how reliable it is, and make informed decisions from evidence.
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
