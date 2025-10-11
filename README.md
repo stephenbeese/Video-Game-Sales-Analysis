@@ -1,6 +1,63 @@
 # Video Games Sales Analysis
 
-**Video Games Sales Analysis** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Video Game Sales Analysis** is a data-driven research project designed to investigate global video game market performance using statistical analysis and interactive visualisation. The project explores how factors such as **region, platform strategy, genre, and critic reception** influence sales outcomes. By combining **Python-based exploratory analysis** with an interactive **Tableau dashboard**, it enables users to drill down into trends, compare publishing strategies, and validate industry hypotheses with evidence.
+
+---
+
+<details>
+<summary><strong>Table of Contents (Click to Expand)</strong></summary>
+
+- [Useful Links](#useful-links)  
+- [Dataset Content](#dataset-content)  
+- [Structure](#structure)  
+- [Data Quality](#data-quality)  
+- [Example Records](#example-records)  
+- [Business Requirements](#business-requirements)  
+- [Hypothesis and how to validate](#hypothesis-and-how-to-validate)  
+  - [Hypothesis 1 — Critic reviews drive sales](#hypothesis-1--critic-reviews-drive-sales)  
+  - [Hypothesis 2 — User reviews drive sales](#hypothesis-2--user-reviews-drive-sales)  
+  - [Hypothesis 3 — Platform strength varies by region](#hypothesis-3--platform-strength-varies-by-region)  
+  - [Hypothesis 4 — Multi-platform advantage](#hypothesis-4--multi-platform-advantage)  
+  - [Hypothesis 5 — First-party advantage](#hypothesis-5--first-party-advantage)  
+- [Project Plan](#project-plan)  
+  - [Sprint Timeline](#sprint-timeline)  
+- [The rationale to map the business requirements to the Data Visualisations](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations)  
+- [Analysis techniques used](#analysis-techniques-used)  
+- [Ethical considerations](#ethical-considerations)  
+- [Dashboard](#dashboard)  
+  - [Dashboard Wireframe](#dashboard-wireframe)  
+- [Dashboard Design Choices](#dashboard-design-choices)  
+  - [Top-Level KPIs for Immediate Insight](#top-level-kpis-for-immediate-insight)  
+  - [Global Trends Over Time](#global-trends-over-time)  
+  - [Regional Variation & Market Preferences](#regional-variation--market-preferences)  
+  - [Critic Influence & Sales Correlation](#critic-influence--sales-correlation)  
+  - [First vs Third Party & Multiplatform vs Exclusive](#first-vs-third-party--multiplatform-vs-exclusive)  
+  - [Filters for Deeper Exploration](#filters-for-deeper-exploration)  
+  - [Final Thought](#final-thought)  
+  - [Dashboard pages](#dashboard-pages)  
+- [Unfixed Bugs](#unfixed-bugs)  
+- [Development Roadmap](#development-roadmap)  
+  - [Project Challenges](#project-challenges)  
+  - [Future Developments](#future-developments)  
+- [Main Data Analysis Libraries](#main-data-analysis-libraries)  
+- [Credits](#credits)  
+  - [Content](#content)  
+  - [Media](#media)  
+- [Additional Information & Definitions](#additional-information--definitions)  
+  - [Core Statistical Concepts](#core-statistical-concepts)  
+
+</details>
+
+
+---
+
+### Useful Links
+ - [Interactive Dashboard](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes)
+ - [Graphs](PLOTS.md)
+ - [Data Examples](jupyter_notebooks/display_data.ipynb)
+ - [ETL Notebook](jupyter_notebooks/etl.ipynb)
+ - [Visualisation Notebook](jupyter_notebooks/visualisations.ipynb)
+ - [Final Conclusions](jupyter_notebooks/visualisations.ipynb#final-conclusions)
 
 ## Dataset Content
 
@@ -81,6 +138,8 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
   * Bubble size represents `Critic_Count`.
 * **Acceptance criteria:** A statistically significant positive correlation (p < 0.05) and a meaningful effect size (e.g., a 10-point increase in critic score results in a noticeable sales uplift).
 
+- [Hypothesis 1 - Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-1---critic-reviews-drive-sales)
+
 ---
 
 ### Hypothesis 2 — **User reviews drive sales**
@@ -93,6 +152,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
   * Scatter plot of `User_Score` vs `Global_Sales` with regression line.
   * Bubble size represents `User_Count`.
 * **Acceptance criteria:** A statistically significant positive correlation (p < 0.05) between user score and sales.
+
+- [Hypothesis 2 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-2--user-reviews-drive-sales)
+
 
 ---
 
@@ -107,6 +169,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
   * Use ANOVA and post-hoc Tukey tests to confirm differences between vendors.
 * **Acceptance criteria:** Nintendo’s average sales are significantly higher in Japan, while Sony/Microsoft show higher averages in NA and EU.
 
+- [Hypothesis 3 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-3--platform-strength-varies-by-region)
+
+
 ---
 
 ### Hypothesis 4 — **Multi-platform advantage**
@@ -119,6 +184,10 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
   * Boxplots or violin plots comparing `Global_Sales` for multi-platform vs single-platform games.
 * **Acceptance criteria:** Multi-platform games show significantly higher global sales (e.g., Mann–Whitney U or t-test).
 
+- [Hypothesis 4 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-4--multi-platform-advantage)
+
+
+
 ---
 
 ### Hypothesis 5 — **First-party advantage**
@@ -130,6 +199,9 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
   * Bar charts comparing mean `Global_Sales` for first-party vs third-party games, grouped by platform vendor.
 * **Acceptance criteria:** First-party games have significantly higher mean sales on their respective platforms (t-test or Mann–Whitney U).
+
+- [Hypothesis 5 – Visualisation and Testing](jupyter_notebooks/visualisations.ipynb#hypothesis-5--first-party-advantage)
+
 
 ---
 
