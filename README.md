@@ -331,6 +331,8 @@ The dataset originates from an open-source platform (e.g. Kaggle) with usage per
 
 ## Dashboard
 
+You can find a link to my interactive Tableau dashboard [here](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes)
+
 ### Dashboard Wireframe
 
 ![Dashboard Wireframe](images/wireframes/wireframe.png)
