@@ -2,6 +2,8 @@
 
 **Video Game Sales Analysis** is a data-driven research project designed to investigate global video game market performance using statistical analysis and interactive visualisation. The project explores how factors such as **region, platform strategy, genre, and critic reception** influence sales outcomes. By combining **Python-based exploratory analysis** with an interactive **Tableau dashboard**, it enables users to drill down into trends, compare publishing strategies, and validate industry hypotheses with evidence.
 
+![Dashboard Screenshot](images/dashboard.png)
+
 ---
 
 <details>
@@ -231,8 +233,6 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 | **Sprint 5 — Dashboard Development**                    | **11 – 12 Oct** | Build an interactive Tableau dashboard to present sales patterns, platform comparisons, and review-driven trends in a clear, business-friendly format.                                        |
 | **Sprint 6 — Documentation & Wrap-up**                  | **13 Oct**      | Finalise the README with business requirements, methodology, and insights. Export cleaned CSV datasets and prepare the project for handover or stakeholder review.                            |
 
-
-This project follows an **agile, sprint-based approach**, breaking the work into small, focused iterations to ensure quality, flexibility, and timely delivery. Early sprints concentrated on preparing and validating the dataset so that later sprints could focus on deeper analysis, hypothesis testing, and presenting insights effectively. The final deliverables include a fully cleaned and engineered dataset, validated analytical findings, and an interactive **Tableau dashboard**.
 
 The project was structured around **user stories**, managed through a [GitHub Kanban board](https://github.com/users/stephenbeese/projects/11/views/1) to maintain accountability and progress tracking. Each sprint delivered a specific analytical milestone, ensuring continuous refinement and adaptation based on findings.
 
