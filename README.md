@@ -108,7 +108,7 @@ You can view the Data Profiling in the [ETL notebook](jupyter_notebooks/etl.ipyn
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Example Records
+## Example Records ([video_game_sales.csv](data/raw/video_game_sales.csv))
 
 ![Example Record](images/dataset-example.png)
 
@@ -430,6 +430,11 @@ The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.tw
 | Predictive Analytics             | **Machine Learning (Regression, Forecasting)**  | To explore predictive sales modelling based on critic scores, platform, genre, and region trends. |
 | Data Engineering                 | **SQL & Cloud Databases (BigQuery/PostgreSQL)** | For handling larger datasets and automating data pipelines rather than manual CSV imports.        |
 | Visual Design & UX               | **Figma / Tableau UX Best Practices**           | To further improve storytelling and layout consistency in dashboards for professional delivery.   |
+| Update Dataset                   | **Web Scraping / API Integration**              | To ensure the dataset remains current by automatically adding new game releases and sales updates.|
+
+### Commitment to Continuous Improvement
+
+As the games industry continues to evolve, I am committed to expanding both my technical capabilities and analytical mindset. Future updates to this project will focus not only on enhancing visual storytelling, but also on incorporating automation, predictive modelling, and real-time data sourcing. By progressing into areas such as machine learning, API integration, and advanced dashboard interactivity, I aim to transform this work from a static analysis into a dynamic, scalable decision-support tool. This project marks the beginning of a longer journey in data analytics, where I will continue to iterate, adapt, and experiment with new methods and technologies.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
@@ -456,10 +461,12 @@ The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.tw
 
 ### Content 
 
-- [Dataset Source](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv) - Kaggle
+- [Dataset Source (Kaggle)](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/version/2.1/index.html)
 - [NumPy Documentation](https://numpy.org/doc/1.26/)
 - [SciPy Documentation](https://docs.scipy.org/doc/scipy/)
+- [ChatGPT](https://chatgpt.com/)
+- [Copilot](https://copilot.microsoft.com/)
 
 ### Media
 
@@ -473,13 +480,32 @@ The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.tw
 
 ### Core Statistical Concepts
 
-* **Mean** — Average of all values; shows the dataset’s centre. *(Add up all values and divide by how many there are)*
-* **Median** — Middle value when data are ordered. *(Put numbers in order; pick the middle one — if even count, average the two middle ones)*
-* **Standard Deviation (SD)** — How spread out values are around the mean. *(Work out how far each value is from the mean on average)*
-* **Probability** — Likelihood of an event. *(Number of ways something can happen ÷ total possible outcomes; between 0 and 1)*
-* **Hypothesis Testing** — Checks if a pattern or difference is likely real or just chance. *(Start with “no difference” and test against your data)*
-* **t-Test** — Compares the averages of two groups to see if any difference is meaningful, not just random.
+* **Mean** — The average of all values; shows the central point of the data.
+  *(Add up all values and divide by how many there are.)*
+* **Median** — The middle value when numbers are ordered.
+  *(Useful when data contains extreme values or outliers, as it is less affected by them.)*
+* **Standard Deviation (SD)** — Measures how spread out the data is from the mean.
+  *(A high SD means values vary widely; a low SD means they are tightly clustered.)*
+* **Probability** — The likelihood of an event occurring, between **0 (impossible)** and **1 (certain)**.
+  *(Calculated as: favourable outcomes ÷ total possible outcomes.)*
+* **Hypothesis Testing** — A method to check if a pattern, relationship, or difference is statistically meaningful or due to random chance.
+  *(We start with a **null hypothesis** — “no difference” — and test against the data.)*
 
-These basics help summarise data, see how reliable it is, and make informed decisions from evidence.
+---
+
+### Statistical Tests & Methods Used
+
+* **t-Test** — Compares the **mean** of two groups to see if the difference between them is statistically significant.
+  *(Used when data is approximately normally distributed.)*
+* **Mann–Whitney U Test** — A non-parametric test that compares the **median/rank** of two groups.
+  *(Used when data are skewed or non-normal — like game sales.)*
+* **Log Scale** — A scale that uses **logarithmic values** (e.g. 10, 100, 1000) instead of linear numbers.
+  *(Useful for data with extreme outliers, as it compresses large values and reveals underlying trends.)*
+* **ANOVA (Analysis of Variance)** — Tests whether **three or more groups** have different means.
+  *(Used to compare platform vendors across multiple regions in this project.)*
+* **Tukey’s HSD (Honestly Significant Difference)** — A **post-hoc test** following ANOVA that identifies **exactly which groups differ** (e.g. Nintendo vs Sony).
+  *(It protects against false positives when making multiple comparisons.)*
+* **p-value** — A value between **0 and 1** that tells us how likely the observed results are due to chance.
+  *(A p-value < 0.05 means the result is statistically significant — unlikely to be random.)*
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
