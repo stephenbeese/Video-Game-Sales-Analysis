@@ -223,9 +223,6 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
 
 This project follows an **agile, sprint-based approach**, breaking the work into small, focused iterations to ensure quality, flexibility, and timely delivery. Early sprints concentrated on preparing and validating the dataset so that later sprints can focus on deeper analysis, hypothesis testing, and presenting insights effectively. The final deliverables include a fully cleaned and engineered dataset, validated analytical findings, and an interactive **Tableau dashboard**.
 
@@ -274,8 +271,22 @@ The combination of **EDA + hypothesis testing** ensures that the project is both
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
 
+The visualisations in this project were designed to directly address the core business requirements by turning raw sales data into meaningful commercial insights. Each chart serves a specific strategic question relevant to publishers, platform holders, and decision-makers in the games industry.
+
+
+| **Business Requirement**                              | **Mapped Visualisation(s)**                                                                                                                                                                                                                | **Rationale**                                                                                                               |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| **Understand global and regional sales performance**  | [**Global Sales Trends Over Time**](PLOTS.md#1-global-sales-trends-over-time), [**Average Global Sales Per Game**](PLOTS.md#2-average-global-sales-per-game-over-time)                                                                     | Identifies long-term market trends, growth periods, and industry decline to support forecasting and strategic timing.       |
+| **Platform strategy (Nintendo vs Sony vs Microsoft)** | [**Total Regional Sales by Platform Vendor**](PLOTS.md#7-total-regional-game-sales-by-platform-vendor), [**Average Regional Sales by Platform Vendor**](PLOTS.md#8-average-regional-game-sales-by-platform-vendor)                         | Helps benchmark platform performance across regions, guiding platform investment and partnership decisions.                 |
+| **First-party vs third-party performance**            | [**Average Sales by Region – First vs Third Party**](PLOTS.md#10-average-sales-by-region---first-party-vs-third-party), [**Global Sales Overview – First vs Third Party**](PLOTS.md#12-global-sales-overview---first-party-vs-third-party) | Assesses whether platform-owned titles outperform third-party releases, informing exclusivity and publishing strategy.      |
+| **Multi-platform release strategy**                   | [**Multi-Platform vs Exclusive Sales (Log Scale)**](PLOTS.md#9-global-sales-comparison-multi-platform-vs-exclusive-games-log-scale)                                                                                                        | Evaluates whether releasing across multiple platforms increases commercial reach and sales consistency.                     |
+| **Review impact on sales (critic & user perception)** | [**Critic Score vs Global Sales**](PLOTS.md#3-critic-score-vs-global-sales), [**User Score vs Global Sales**](PLOTS.md#5-user-score-vs-global-sales)                                                                                       | Tests whether critical reception or player sentiment drives commercial success, supporting marketing and quality decisions. |
+| **Release planning & lifecycle strategy**             | [**Global Sales Trends Over Time**](PLOTS.md#1-global-sales-trends-over-time), [**Average Sales Over Time**](PLOTS.md#2-average-global-sales-per-game-over-time)                                                                           | Helps determine which release years were most commercially successful and whether industry peaks affect launch timing.      |
+
+### Strategic Role of Visual Mapping
+
+By aligning visualisations with business requirements, this project ensures that insights are practical and decision-ready. Each chart is built to answer a commercial question — helping stakeholders move from data to direction.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
@@ -359,6 +370,8 @@ The dashboard was deliberately structured to make **complex insights accessible*
 | **Top-Selling Game**                              | KPI / Text Card                      | Displays the highest-selling video game dynamically by region.              | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGame?publish=yes) |
 | **Top-Selling Genre**                             | KPI / Text Card                      | Shows the genre with the highest total sales in selected region.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGenre?publish=yes) |
 | **Video Game Sales Analysis Dashboard**           | Full Interactive Dashboard           | Combined dashboard containing all KPIs, charts, and interactive filters.    | [View Full Dashboard](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes) |
+
+The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.twbx). It can be uploaded to Tableau public so you can reproduce the results yourself.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
