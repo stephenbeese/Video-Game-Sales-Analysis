@@ -5,7 +5,7 @@
 ---
 
 <details>
-<summary><strong>📌 Table of Contents (Click to Expand)</strong></summary>
+<summary><strong style="font-size: 1.5em;">Table of Contents (Click to Expand)</strong></summary>
 
 - [Video Game Sales Analysis](#video-game-sales-analysis)  
   - [Useful Links](#useful-links)  
@@ -57,8 +57,6 @@
  - [ETL Notebook](jupyter_notebooks/etl.ipynb)
  - [Visualisation Notebook](jupyter_notebooks/visualisations.ipynb)
  - [Final Conclusions](jupyter_notebooks/visualisations.ipynb#final-conclusions)
-
-<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Dataset Content
 
@@ -299,10 +297,37 @@ By aligning visualisations with business requirements, this project ensures that
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+
+## **Ethical Considerations**
+
+This project uses publicly available historical video game sales data, which does not include any personal or sensitive information. As such, there are **no direct data privacy concerns** related to GDPR or individual user rights. However, ethical responsibility still applies in terms of **fairness, representation, and interpretation** of insights.
+
+### **Bias and Fairness**
+
+The dataset primarily represents sales figures from major commercial platforms and publishers. This introduces potential **industry bias**, as:
+
+* Independent and niche developers are underrepresented.
+* Sales are heavily skewed towards Western and Japanese markets.
+* Review scores often reflect critic and user opinions from dominant regions, which may not represent global sentiment.
+
+To mitigate misinterpretation:
+
+* Findings are framed at an **industry level**, not as universal truths about game quality or cultural preference.
+* Statistical trends were analysed cautiously, prioritising *context* over raw correlation.
+
+### **Responsible Interpretation**
+
+Sales performance does not reflect artistic or cultural value. High sales may be influenced by marketing budgets, franchise recognition, or platform exclusivity—not necessarily game quality. Therefore:
+
+* Insights were presented with emphasis on **commercial trends**, not judgements of creative merit.
+* Hypotheses are supported by evidence but leave room for external industry factors.
+
+### **Legal and Usage Compliance**
+
+The dataset originates from an open-source platform (e.g. Kaggle) with usage permitted for educational and non-commercial analysis. No proprietary or confidential data was used. All data manipulation, visualisation, and interpretation were carried out within ethical and legal standards expected in data analytics.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 
 ## Dashboard
 
