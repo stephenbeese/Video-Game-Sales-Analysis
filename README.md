@@ -1,6 +1,6 @@
 # Video Game Sales Analysis
 
-**Video Game Sales Analysis** is a data-driven research project designed to investigate global video game market performance using statistical analysis and interactive visualisation. The project explores how factors such as **region, platform strategy, genre, and critic reception** influence sales outcomes. By combining **Python-based exploratory analysis** with an interactive **Tableau dashboard**, it enables users to drill down into trends, compare publishing strategies, and validate industry hypotheses with evidence.
+**Video Game Sales Analysis** is a data-driven research project designed to investigate global video game market performance using statistical analysis and interactive visualisations. The project explores how factors such as **region, platform strategy, genre, and critic reception** influence sales outcomes. By combining **Python-based exploratory analysis** with an interactive **Tableau dashboard**, it enables users to drill down into trends, compare publishing strategies, and validate industry hypotheses with evidence.
 
 ![Dashboard Screenshot](images/dashboard.png)
 
@@ -291,8 +291,6 @@ By aligning visualisations with business requirements, this project ensures that
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
-
-## Ethical considerations
 
 ## **Ethical Considerations**
 
