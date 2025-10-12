@@ -64,7 +64,7 @@
 
 This dataset provides information about **video game sales, platforms, publishers, and review scores**, enabling analysis of market trends, platform performance, and the relationship between reviews and sales.
 
-<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+You can find the source of this dataset [here](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)
 
 ## Structure
 
@@ -103,6 +103,8 @@ This dataset provides information about **video game sales, platforms, publisher
   * `User_Score` & `User_Count` — ~55%
   * `Developer` & `Rating` — ~40%
   * `Year_of_Release` — 269 rows
+
+You can view the Data Profiling in the [ETL notebook](jupyter_notebooks/etl.ipynb#data-profiling)
 
 ---
 
@@ -229,7 +231,7 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 
 ### Sprint Timeline
 
-| Sprint                                                  | Date(s)         | Goals                                                                                                                                                                                         |
+| Sprint / High Level Steps                                                  | Date(s)         | Goals                                                                                                                                                                                |
 | ------------------------------------------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Sprint 1 — ETL, Data Cleaning & Feature Engineering** | **07 Oct**      | Extract and import raw data, clean missing or invalid values, drop unused fields, convert column types, and create new engineered features (`is_multiplatform`, `is_first_party`).            |
 | **Sprint 2 — Data Validation & Quality Checks**         | **08 Oct**      | Validate the integrity of the cleaned dataset (check for duplicates, outliers, and inconsistencies) and confirm the correctness of new features.                                              |
@@ -238,10 +240,42 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 | **Sprint 5 — Dashboard Development**                    | **11 – 12 Oct** | Build an interactive Tableau dashboard to present sales patterns, platform comparisons, and review-driven trends in a clear, business-friendly format.                                        |
 | **Sprint 6 — Documentation & Wrap-up**                  | **13 Oct**      | Finalise the README with business requirements, methodology, and insights. Export cleaned CSV datasets and prepare the project for handover or stakeholder review.                            |
 
+
+This project follows an **agile, sprint-based approach**, breaking the work into small, focused iterations to ensure quality, flexibility, and timely delivery. Early sprints concentrated on preparing and validating the dataset so that later sprints could focus on deeper analysis, hypothesis testing, and presenting insights effectively. The final deliverables include a fully cleaned and engineered dataset, validated analytical findings, and an interactive **Tableau dashboard**.
+
+The project was structured around **user stories**, managed through a [GitHub Kanban board](https://github.com/users/stephenbeese/projects/11/views/1) to maintain accountability and progress tracking. Each sprint delivered a specific analytical milestone, ensuring continuous refinement and adaptation based on findings.
+
+Screenshots of the Kanban board during the development process can be found [here](images/kanban/).
+
+---
+
+### **How I Managed the Data**
+
+* **Collection:** Raw game sales data was collected from a trusted Kaggle source.
+* **Processing:** During ETL, I cleaned missing scores, standardised platforms, and engineered meaningful features.
+* **Analysis:** The cleaned dataset was versioned into separate analytical subsets (critic review, user review, first-party, merged), ensuring modular and reusable workflows.
+* **Interpretation:** Findings were supported with statistical evidence and visualisations, avoiding assumptions and focusing on data-driven conclusions.
+
+Throughout the project, the data journey was fully traceable—from raw input to finished insights—ensuring reliability and reproducibility.
+
+---
+
+### **Why I Chose These Research Methodologies**
+
+I chose a **quantitative, hypothesis-driven approach** to focus on measurable commercial patterns rather than subjective opinions. This approach allowed me to:
+
+* Use **statistical validation** (e.g. ANOVA, t-tests) to support or reject assumptions with evidence.
+* Compare groups objectively (e.g. first-party vs third-party, single-platform vs multi-platform).
+* Provide actionable insights for business stakeholders—such as publishers or platform owners—who require clear performance indicators rather than exploratory speculation.
+
+The combination of **EDA + hypothesis testing** ensures that the project is both exploratory and evaluative, offering not only what the data shows but *why it matters* commercially.
+
+
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
+
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
