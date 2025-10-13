@@ -25,25 +25,6 @@ def wmean(values: pd.Series, weights: pd.Series):
     return np.average(v[mask], weights=w[mask])
 
 
-# def should_merge(
-#     group: pd.DataFrame,
-#     max_year_span: int = 1,
-#     max_critic_diff: float = 5.0,
-#     require_same_publisher: bool = False,
-# ) -> bool:
-#     """
-#     Decide if rows for the same Name should be merged across platforms/years.
-#     """
-#     year_span = group["Year_of_Release"].max() - group["Year_of_Release"].min()
-#     cs = group["Critic_Score"].dropna()
-#     critic_range = (cs.max() - cs.min()) if not cs.empty else 0.0
-
-#     if require_same_publisher and group["Publisher"].dropna().nunique() > 1:
-#         return False
-
-#     return (year_span <= max_year_span) and (critic_range <= max_critic_diff)
-
-
 def should_merge(
     group, max_year_span=5, max_critic_diff=5.0, require_same_publisher=False
 ):
