@@ -1,3 +1,8 @@
+"""
+Utility functions for cleaning and preprocessing the video game sales dataset.
+"""
+
+
 def convert_dtypes(df):
     """
     Convert dataframe columns to appropriate dtypes for memory efficiency and analysis.
@@ -16,6 +21,9 @@ def convert_dtypes(df):
 
 
 def clean_data(df):
+    """
+    Clean the dataframe by handling missing values and dropping unnecessary columns.
+    """
     # Remove rows where 'Name' or 'Global_Sales' is unknown
     df.dropna(subset=["Name", "Global_Sales"], inplace=True)
 
