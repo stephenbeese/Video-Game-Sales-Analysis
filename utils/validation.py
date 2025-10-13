@@ -1,3 +1,7 @@
+"""
+Utility functions for statistical validation tests.
+"""
+
 from scipy.stats import f_oneway
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
@@ -7,9 +11,9 @@ def run_anova_by_region(df, regions, vendors):
     Runs one-way ANOVA tests for each region across vendors.
 
     Parameters:
-        df (pd.DataFrame): Cleaned dataset containing sales columns (e.g. 'JP_Sales', 'NA_Sales', 'EU_Sales').
-        regions (list): List of region column names to test, e.g. ['JP_Sales', 'NA_Sales', 'EU_Sales'].
-        vendors (list): List of vendor names to compare (default = Nintendo, Sony, Microsoft, Other).
+    - df (pd.DataFrame): Cleaned dataset containing sales columns (e.g. 'JP_Sales', 'NA_Sales').
+    - regions (list): List of region column names to test, e.g. ['JP_Sales', 'NA_Sales'].
+    - vendors (list): List of vendors to compare (default = Nintendo, Sony, Microsoft, Other).
 
     Returns:
         dict: Dictionary with region names as keys and ANOVA results as values.
@@ -22,7 +26,8 @@ def run_anova_by_region(df, regions, vendors):
         results[region] = anova_result
 
         print(
-            f"ANOVA ({region.replace('_Sales', '')}): F = {anova_result.statistic:.3f}, p = {anova_result.pvalue:.5f}"
+            f"ANOVA ({region.replace(
+                '_Sales', '')}): F = {anova_result.statistic:.3f}, p = {anova_result.pvalue:.5f}"
         )
 
     return results
