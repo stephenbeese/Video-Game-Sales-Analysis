@@ -6,6 +6,29 @@
 
 ---
 
+## Executive Summary
+
+This project analyses global video game sales to uncover how factors such as region, platform strategy, critic reception and publishing model influence commercial performance. Using Python for data cleaning and statistical validation, and Tableau for interactive visualisation, I tested five hypotheses relating to reviews, platform dominance and release strategies. The final dashboard enables stakeholders to explore trends, compare publisher performance, and derive actionable insights for strategic decision-making within the games industry.
+
+## Key Findings
+
+* **Critic Reviews Are Strong Predictors of Sales**
+  Games with higher critic scores tend to achieve higher global sales, confirming the commercial influence of professional reception.
+
+* **User Reviews Show Weaker Sales Correlation**
+  Positive user scores contribute to success, but player enjoyment alone does not guarantee strong sales — marketing and franchise power still matter.
+
+* **Regional Platform Preferences Are Distinct**
+  Nintendo dominates the Japanese market, while Sony and Microsoft lead in North America and Europe, reflecting strong regional brand loyalty.
+
+* **Multi-Platform Releases Maximise Reach**
+  Games launched across multiple platforms generally outperform exclusives in total sales due to wider audience access.
+
+* **First-Party Franchises Remain Commercial Powerhouses**
+  Console-owned titles (e.g. *Mario*, *Halo*) often achieve higher average sales, supported by brand loyalty and platform promotion.
+
+---
+
 <details>
 <summary><strong style="font-size: 1.5em;">Table of Contents (Click to Expand)</strong></summary>
 
@@ -54,7 +77,7 @@
  - [Data Examples](jupyter_notebooks/display_data.ipynb)
  - [ETL Notebook](jupyter_notebooks/etl.ipynb)
  - [Visualisation Notebook](jupyter_notebooks/visualisations.ipynb)
- - [Final Conclusions](jupyter_notebooks/visualisations.ipynb#final-conclusions)
+ - [Final Conclusions (Bottom of the page)](jupyter_notebooks/visualisations.ipynb#final-conclusions)
 
 ## Dataset Content
 
