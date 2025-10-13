@@ -427,9 +427,39 @@ The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.tw
 
 ## Unfixed Bugs & Known Limitations
 
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+Although the project functions as intended for analysis and insight generation, there are a few known limitations which I chose not to alter due to risks of introducing inaccuracies rather than lack of time. This is something I will look at in the future to 
+
+### 1. Regional Filtering in Tableau
+
+During dashboard development, I encountered an issue with **region-based filtering** due to the dataset’s wide format (separate columns for NA, EU, JP, etc.). Tableau initially resisted dynamic region selection. I implemented a workaround using a **parameter and calculated field**, which resolved the issue functionally, but it is not a perfect solution as it requires manual setup for each metric.
+**Reason not fully resolved:** Tableau’s native structure does not easily support dynamic KPI switching from wide-format datasets. Addressing it fully would require data restructuring into long format, which risked breaking other established visual logic.
+
+### 2. Outlier Sensitivity in Statistical Tests
+
+Some statistical tests (particularly t-tests and ANOVA) remain sensitive to outliers, even after log scaling. While I filtered extreme cases for visual clarity, I did not implement more advanced robust statistical methods (e.g. trimmed means or Winsorisation).
+**Reason not resolved:** Rather than masking real high-performing titles, I opted for transparency and acknowledged the impact of skewed data in my analysis, maintaining interpretability over methodological perfection.
+
+### 3. Missing Review Data
+
+A large proportion of records lacked `Critic_Score` or `User_Score`. I removed these rows for correlational analysis rather than applying imputation techniques.
+**Reason not resolved:** Imputation may fabricate artificial values and compromise the integrity of statistical testing. I chose accuracy of sample over inflation of dataset size.
+
+---
+
+### Gaps in Knowledge & How I Addressed Them
+
+I recognised gaps particularly around **statistical validation** (e.g. choosing between t-tests and non-parametric alternatives) and **Tableau parameter logic**. To address these:
+
+* I consulted **documentation and statistical guides**, and used **ChatGPT** to clarify the correct test selection based on data distribution.
+* I studied Tableau community forums to implement calculated field solutions for dynamic metric switching.
+
+This process strengthened my understanding of both statistical reasoning and dashboard engineering.
+
+---
+
+### Use of Feedback
+
+While I did not receive formal peer or instructor feedback during development, I used **self-review and AI-assisted critique** to refine explanations, ensure clarity for non-technical users, and stress-test my assumptions. Where AI identified weak narrative or unclear visual explanation, I revised dashboards and README sections accordingly.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
