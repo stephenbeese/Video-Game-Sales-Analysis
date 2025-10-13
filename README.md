@@ -510,22 +510,25 @@ As the games industry continues to evolve, I am committed to expanding both my t
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Credits 
+## Credits
 
-### Content 
+### **Data & Content Sources**
 
-- [Dataset Source (Kaggle)](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)
-- [Pandas Documentation](https://pandas.pydata.org/pandas-docs/version/2.1/index.html)
-- [NumPy Documentation](https://numpy.org/doc/1.26/)
-- [SciPy Documentation](https://docs.scipy.org/doc/scipy/)
-- [ChatGPT](https://chatgpt.com/)
-- [Copilot](https://copilot.microsoft.com/)
+* **[Video Game Sales Dataset](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)** – Kaggle (public dataset used for analysis and reporting)
+* **Official Documentation**
+  * *Pandas*, *NumPy*, *SciPy*, *Plotly*, *Matplotlib*, *Seaborn* – for reference during data cleaning, numerical analysis, statistical testing and visualisations
+  * *[Tableau Public Documentation](https://help.tableau.com/current/pro/desktop/en-us/default.htm)* – for dashboard construction and parameter logic
 
-### Media
+### **Tools & AI Assistance**
 
-- All images used are screenshots of personal work.
+* **ChatGPT** – used for idea refinement, interpreting statistical outputs, and enhancing clarity in written insights
+* **GitHub Copilot** – used to support code generation, syntax suggestions, and optimisation during Python development
 
----
+*All AI-assisted content was reviewed, tested, and adapted to ensure analytical accuracy and originality.*
+
+### **Media & Visual Assets**
+
+* All visual images and screenshots are my own work, created through Jupyter notebooks, Tableau dashboards, or custom graphics generated during analysis.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
