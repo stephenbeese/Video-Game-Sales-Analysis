@@ -284,11 +284,40 @@ By aligning visualisations with business requirements, this project ensures that
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+## Analysis Techniques Used
+
+To analyse the video game sales dataset, I used a combination of **descriptive statistics, hypothesis testing, regression analysis**, and **visual exploration**. I began with descriptive measures such as **mean, median and standard deviation** to understand central trends and variation. From there, I applied **linear regression** to explore relationships (e.g. critic score vs global sales), and a range of **statistical tests** depending on the question:
+
+* **t-tests** and **Mann–Whitney U tests** for comparing groups such as first-party vs third-party or single vs multi-platform games.
+* **ANOVA and Tukey HSD** for comparing more than two groups, such as platform vendors.
+* **Log scale transformations and outlier filtering** to address extreme skew and heavy-tailed sales data.
+
+### Structured Approach
+
+I structured my analysis in three stages:
+
+1. **Data cleaning and preparation** – handling missing values, engineering features (e.g. `is_multiplatform`), and formatting categories.
+2. **Exploratory Analysis (EDA)** – identifying trends in regions, platforms, and genres using visualisations.
+3. **Hypothesis Testing** – formally testing the business questions with appropriate statistical methods and validating results through visuals.
+
+This approach ensured each insight was supported by both quantitative evidence and clear visual representation.
+
+### Data Limitations and Alternatives
+
+The dataset presented several constraints.
+Around **50% of critic and user scores were missing**, which limited sample size for review-based hypotheses. I chose to **remove missing records** rather than impute data to preserve integrity, acknowledging a potential bias towards more popular titles.
+
+Sales data was highly **skewed**, with a few blockbuster games distorting averages. I addressed this using **logarithmic scales** and, where necessary, **removal of extreme outliers**. An alternative approach would have been robust statistics or segmenting best-sellers separately, but cleaning and transformation were sufficient for this project’s scope.
+
+### Use of Generative AI (ChatGPT & GitHub Copilot)
+
+I used **ChatGPT and GitHub Copilot** as support tools throughout the project:
+
+* **Code assistance** – generating and refining Pandas operations, plots, and statistical functions.
+* **Explanation and validation** – clarifying statistical outputs and verifying hypothesis logic.
+* **Narrative support** – refining insights into clear explanations suitable for non-technical audiences.
+
+While I remained responsible for all interpretation and decision-making, AI tools accelerated routine coding tasks and helped refine the clarity of my storytelling.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
@@ -396,7 +425,7 @@ The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.tw
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Unfixed Bugs
+## Unfixed Bugs & Known Limitations
 
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
 * Did you recognise gaps in your knowledge, and how did you address them?
