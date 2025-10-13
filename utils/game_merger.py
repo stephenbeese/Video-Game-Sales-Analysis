@@ -1,14 +1,18 @@
-# Imports
+"""
+Utility functions for merging game entries based on defined criteria."""
+
 import pandas as pd
 import numpy as np
 
 
 def join_unique(s: pd.Series) -> str:
+    """Join unique non-null values from a Series into a comma-separated string."""
     vals = s.dropna().astype(str).unique().tolist()
     return ", ".join(sorted(vals)) if vals else np.nan
 
 
 def mode_or_first(s: pd.Series):
+    """Return the mode of a Series, or the first value if no mode exists."""
     s = s.dropna()
     if s.empty:
         return np.nan
@@ -17,6 +21,7 @@ def mode_or_first(s: pd.Series):
 
 
 def wmean(values: pd.Series, weights: pd.Series):
+    """Compute the weighted mean of a Series, handling NaNs and zero weights."""
     v = values.copy()
     w = weights.copy()
     mask = v.notna() & w.notna() & (w > 0)
@@ -28,6 +33,7 @@ def wmean(values: pd.Series, weights: pd.Series):
 def should_merge(
     group, max_year_span=5, max_critic_diff=5.0, require_same_publisher=False
 ):
+    """Determine if a group of game entries should be merged based on criteria."""
     # ----- year span -----
     year_span = 0
     if "Year_of_Release" in group.columns:
@@ -90,7 +96,7 @@ def build_merged_df(
     Build the merged dataframe using the rules defined above.
     """
     rows = []
-    for name, name_grp in df.groupby("Name"):
+    for _, name_grp in df.groupby("Name"):
         if should_merge(
             name_grp,
             max_year_span=max_year_span,
