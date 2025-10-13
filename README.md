@@ -532,6 +532,33 @@ As the games industry continues to evolve, I am committed to expanding both my t
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
+## Tableau Public Deployment
+
+This project’s analytical findings were deployed via **Tableau Public**, allowing the dashboard to be accessed online without the need for local setup or server hosting.
+
+I published **each individual worksheet** (e.g. Sales Over Time, First vs Third Party, Regional Distribution) as well as a complete **interactive dashboard** that brings together the key KPIs, trend charts, and comparative insights.
+
+#### **Deployment Process (Tableau Public)**
+
+1. Built all visualisations and dashboards within **Tableau Desktop**.
+2. Signed in to **Tableau Public** and published the workbook directly from Tableau.
+3. Each sheet and the full dashboard were made publicly accessible via a shareable web link.
+4. Verified that interactive features (filters, parameters, tooltips) function correctly in the browser version.
+5. Embedded links to each dashboard page within the README for ease of navigation.
+
+#### **Live Dashboard Access**
+
+The full interactive dashboard can be accessed [here](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes)
+
+Tableau Public handles hosting and updates automatically. Any changes published from Tableau Desktop are immediately reflected in the live version, ensuring the dashboard remains up to date.
+
+#### **Why Tableau Public?**
+
+* No server configuration or hosting required
+* Free and accessible via browser
+* Ideal for showcasing interactive visual analytics
+* Allows easy sharing with both technical and non-technical audiences
+
 ## Additional Information & Definitions
 
 ### Core Statistical Concepts
