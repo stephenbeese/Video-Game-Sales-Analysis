@@ -41,7 +41,7 @@ This project analyses global video game sales to uncover how factors such as reg
 - [Example Records](#example-records-video_game_salescsv)
 - [Business Requirements](#business-requirements)
 - [Application of Analytics in the Games Industry](#application-of-analytics-in-the-games-industry)
-- [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
+- [Hypotheses and How to Validate](#hypothesis-and-how-to-validate)
   - [Hypothesis 1 — Critic reviews drive sales](#hypothesis-1--critic-reviews-drive-sales)
   - [Hypothesis 2 — User reviews drive sales](#hypothesis-2--user-reviews-drive-sales)
   - [Hypothesis 3 — Platform strength varies by region](#hypothesis-3--platform-strength-varies-by-region)
@@ -52,7 +52,7 @@ This project analyses global video game sales to uncover how factors such as reg
 - [Project Management: Kanban Board & MoSCoW Prioritisation](#project-management-kanban-board--moscow-prioritisation)
 - [How I Managed the Data](#how-i-managed-the-data)
 - [Why I Chose These Research Methodologies](#why-i-chose-these-research-methodologies)
-- [The rationale to map the business requirements to the Data Visualisations](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations)
+- [Mapping Business Requirements to Visualisations](#mapping-business-requirements-to-visualisations)
 - [Analysis Techniques Used](#analysis-techniques-used)
 - [Ethical Considerations](#ethical-considerations)
 - [Dashboard](#dashboard)
@@ -79,7 +79,6 @@ This project analyses global video game sales to uncover how factors such as reg
 
 </details>
 
-
 ---
 
 ### Useful Links
@@ -88,13 +87,13 @@ This project analyses global video game sales to uncover how factors such as reg
  - [Data Examples](jupyter_notebooks/display_data.ipynb)
  - [ETL Notebook](jupyter_notebooks/etl.ipynb)
  - [Visualisation Notebook](jupyter_notebooks/visualisations.ipynb)
- - [Final Conclusions (Bottom of the page)](jupyter_notebooks/visualisations.ipynb#final-conclusions)
+ - [Final Conclusions (bottom of the page)](jupyter_notebooks/visualisations.ipynb#final-conclusions)
 
 ## Dataset Content
 
 This dataset provides information about **video game sales, platforms, publishers, and review scores**, enabling analysis of market trends, platform performance, and the relationship between reviews and sales.
 
-You can find the source of this dataset [here](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)
+You can find the source of this dataset [here](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv).
 
 ## Structure
 
@@ -132,9 +131,9 @@ You can find the source of this dataset [here](https://www.kaggle.com/datasets/s
   * `Critic_Score` & `Critic_Count` — ~50%
   * `User_Score` & `User_Count` — ~55%
   * `Developer` & `Rating` — ~40%
-  * `Year_of_Release` — 269 rows
+  * `Year_of_Release` — missing in 269 rows
 
-You can view the Data Profiling in the [ETL notebook](jupyter_notebooks/etl.ipynb#data-profiling)
+You can view the Data Profiling in the [ETL notebook](jupyter_notebooks/etl.ipynb#data-profiling).
 
 ---
 
@@ -205,10 +204,12 @@ The industry is increasingly adopting **machine learning and AI** to predict:
 
 This project provides a foundation for such advancements, demonstrating how structured data analysis can answer real commercial questions in gaming.
 
+AI is increasingly used in gaming to forecast sales based on pre-release metrics such as trailer sentiment, wishlist volume or review trajectory. In future, models trained on historical sales data such as the dataset used in this project could support publishers in predicting commercial performance and optimising release timing.
+
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Hypothesis and how to validate
+## Hypothesis and How To Validate
 
 ### Hypothesis 1 — **Critic reviews drive sales**
 
@@ -375,7 +376,7 @@ The combination of **EDA + hypothesis testing** ensures that the project is both
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## The rationale to map the business requirements to the Data Visualisations
+## Mapping Business Requirements to Visualisations
 
 The visualisations in this project were designed to directly address the core business requirements by turning raw sales data into meaningful commercial insights. Each chart serves a specific strategic question relevant to publishers, platform holders, and decision-makers in the games industry.
 
@@ -497,12 +498,12 @@ A **global map** illustrates sales distribution by region (e.g., North America, 
 
 The **Critic Score vs Global Sales** scatterplot examines whether highly-rated games perform better commercially. Outliers and clusters help reveal cases where brand power outweighs critic scores or where critical success translates to strong sales.
 
-### First vs Third Party & Multiplatform vs Exclusive
+### First vs Third Party & Multi-platform vs Exclusive
 
 Comparative bar charts allow users to analyse platform strategy:
 
 * **First vs Third Party** (publisher impact),
-* **Multiplatform vs Exclusive** (distribution strategy).
+* **Multi-platform vs Exclusive** (distribution strategy).
 
 These visuals support strategic conclusions about reach, brand loyalty, and market penetration.
 
@@ -516,7 +517,7 @@ The dashboard was deliberately structured to make **complex insights accessible*
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-### Dashboard pages
+### Dashboard Pages
 
 | Page Name                                        | Chart Type(s)                        | Description                                                                 | Link |
 |--------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------|------|
@@ -526,19 +527,19 @@ The dashboard was deliberately structured to make **complex insights accessible*
 | **Regional Distribution of Video Games Sales**    | Map (Symbol/Filled)                  | Visualises geographic distribution of sales across global regions.          | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/RegionalDistributionofVideoGamesSales?publish=yes) |
 | **Impact of Critic Rating on Global Video Games Sales** | Scatter Plot + Trendline      | Analyses correlation between critic scores and sales performance.           | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/ImpactofCriticRatingonGlobalVideoGamesSales?publish=yes) |
 | **Sales Comparison – First vs Third Party**       | Bar Chart                            | Compares sales of first-party vs third-party published games.               | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/SalesComparison-FirstvsThirdParty?publish=yes) |
-| **Sales Comparison – Multiplatform vs Exclusive** | Bar Chart                            | Compares performance between exclusive and multiplatform titles.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/SalesComparison-MultiplatformvsExclusive?publish=yes) |
+| **Sales Comparison – Multi-platform vs Exclusive** | Bar Chart                            | Compares performance between exclusive and multi-platform titles.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/SalesComparison-MultiplatformvsExclusive?publish=yes) |
 | **Total Games**                                   | KPI / Text Card                      | Shows total number of games under current region and filters.               | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TotalGames?publish=yes) |
 | **Top-Selling Game**                              | KPI / Text Card                      | Displays the highest-selling video game dynamically by region.              | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGame?publish=yes) |
 | **Top-Selling Genre**                             | KPI / Text Card                      | Shows the genre with the highest total sales in selected region.            | [View Sheet](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/TopSellingGenre?publish=yes) |
 | **Video Game Sales Analysis Dashboard**           | Full Interactive Dashboard           | Combined dashboard containing all KPIs, charts, and interactive filters.    | [View Full Dashboard](https://public.tableau.com/app/profile/stephen.beese/viz/Video_Game_Dashboard_17601098705760/VideoGameSalesAnalysisDashboard?publish=yes) |
 
-The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.twbx). It can be uploaded to Tableau public so you can reproduce the results yourself.
+The Tableau Workbook file can be found [here](dashboards/Video_Game_Dashboard.twbx). It can be uploaded to Tableau Public so you can reproduce the results yourself.
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Unfixed Bugs & Known Limitations
 
-Although the project functions as intended for analysis and insight generation, there are a few known limitations which I chose not to alter due to risks of introducing inaccuracies rather than lack of time. This is something I will look at in the future to 
+Although the project functions as intended for analysis and insight generation, there are a few known limitations which I chose not to alter due to risks of introducing inaccuracies rather than lack of time. I plan to iterate on these areas in future versions of the project.
 
 ### 1. Regional Filtering in Tableau
 
@@ -580,7 +581,7 @@ While I did not receive formal peer or instructor feedback during development, I
 
 | **Challenge**                                                                                             | **Strategy to Overcome**                                                                                                                                                                                  |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Complex Data Cleaning & Merging** (multiple sources with missing values, inconsistent platform formats) | Used **Pandas** to standardise fields, merge and split data, and create new calculated fields such as `is_multiplatform`. |
+| **Complex Data Cleaning & Merging** (multiple columns with missing values, inconsistent platform formats) | Used Pandas to standardise fields, merge and split data, and create new calculated fields such as `is_multiplatform`. During development, I refactored several data operations to use vectorised Pandas methods instead of Python loops, improving performance on group-level calculations. I also debugged early merge issues with duplicated titles by enforcing consistent platform keys, which reduced join errors and improved data integrity. |
 | **Region Filtering Not Working in Tableau** (due to long-format region/sales fields)                      | Designed a **Region Selector parameter** with calculated logic to dynamically control which region metric was displayed.                                                           |
 | **Calculating Accurate Averages per Game**                                                                | Used **LOD expressions** (`{ FIXED }`) to compute game-level totals and counts, preventing aggregation errors and ensuring accurate average sales in Tableau.                                             |
 | **Visual clarity with overlapping scatter points** (Critic Score vs Sales)                                | Introduced **mark transparency**, sorted axes, and tooltips with context (Number of Reviews, Title) to enhance readability and interpretability.                                                          |
@@ -611,10 +612,10 @@ As the games industry continues to evolve, I am committed to expanding both my t
 | **NumPy**                             | Provided array-based operations and numerical calculations to support Pandas and custom metric creation.                                                                                       |
 | **Matplotlib**                        | Created early exploratory plots (trends, line charts, sales distributions) for understanding data before dashboard visualisation.                                                              |
 | **Seaborn**                           | Used for statistical visualisations (scatter plots with regression lines, boxplots, heatmaps) to identify patterns such as genre performance and critic influence.                             |
-| **Plotly**                            | Used to create interactive statistical visualisations such as box plots, particularly for comparing sales distributions between multiplatform vs exclusive games. Log-scale axis was applied to reveal spread, median, and outliers—helping validate sales inequality before creating comparative charts in Tableau. |
+| **Plotly**                            | Used to create interactive statistical visualisations such as box plots, particularly for comparing sales distributions between multi-platform vs exclusive games. Log-scale axis was applied to reveal spread, median, and outliers—helping validate sales inequality before creating comparative charts in Tableau. |
 | **SciPy – `f_oneway`**                | Performed **ANOVA (Analysis of Variance)** to test whether average sales differed significantly between multiple genres or platforms.                                                          |
 | **SciPy – `linregress`**              | Conducted **linear regression analysis** (slope, intercept, r-value) to validate the relationship between critic score and sales, supporting correlation insights later visualised in Tableau. |
-| **SciPy – `ttest_ind`**               | Ran **two-sample t-tests** to compare mean sales between two independent groups (e.g., First vs Third Party, Exclusive vs Multiplatform).                                                      |
+| **SciPy – `ttest_ind`**               | Ran **two-sample t-tests** to compare mean sales between two independent groups (e.g., First vs Third Party, Exclusive vs Multi-platform).                                                      |
 | **SciPy – `mannwhitneyu`**            | Used as a **non-parametric alternative** to t-test (when sales data was not normally distributed) to compare median performance between two groups.                                            |
 | **Statsmodels – `pairwise_tukeyhsd`** | Applied **post-hoc Tukey HSD testing** after ANOVA to identify which specific genres/platforms differed significantly in mean sales.                                                           |
 | **Tableau Desktop / Tableau Public**  | Used to build final interactive dashboards with KPIs, regional filtering, trend analysis, genre insights, and hypothesis validation.                                                           |
