@@ -510,29 +510,32 @@ As the games industry continues to evolve, I am committed to expanding both my t
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Credits
+## Version Control
 
-### **Data & Content Sources**
+This project was managed using **Git and GitHub** to ensure a structured and traceable development process. Version control was essential for organising work across different project stages, including data cleaning (ETL), exploratory analysis, hypothesis testing, and documentation.
 
-* **[Video Game Sales Dataset](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)** – Kaggle (public dataset used for analysis and reporting)
-* **Official Documentation**
-  * *Pandas*, *NumPy*, *SciPy*, *Plotly*, *Matplotlib*, *Seaborn* – for reference during data cleaning, numerical analysis, statistical testing and visualisations
-  * *[Tableau Public Documentation](https://help.tableau.com/current/pro/desktop/en-us/default.htm)* – for dashboard construction and parameter logic
+### **Version Control Practices Used**
 
-### **Tools & AI Assistance**
+* **Frequent Commits:**
+  I committed changes regularly with clear, descriptive messages to capture each analytical milestone.
 
-* **ChatGPT** – used for idea refinement, interpreting statistical outputs, and enhancing clarity in written insights
-* **GitHub Copilot** – used to support code generation, syntax suggestions, and optimisation during Python development
+* **Documentation Tracking:**
+  All updates to the README, PLOTS.md, and notebooks were version-controlled, ensuring the evolution of project narrative and methodology was fully traceable.
 
-*All AI-assisted content was reviewed, tested, and adapted to ensure analytical accuracy and originality.*
+* **GitHub Project Board (Kanban):**
+  A Kanban-style board was used to manage tasks in sprints, helping to prioritise work between ETL, visualisations, hypothesis testing, dashboard design, and final report writing.
 
-### **Media & Visual Assets**
+### **Benefits of Version Control in this Project**
 
-* All visual images and screenshots are my own work, created through Jupyter notebooks, Tableau dashboards, or custom graphics generated during analysis.
+-  Enabled rollback to previous analysis states if tests or transformations produced unexpected results
+-  Supported iterative improvement of code and visualisations
+-  Ensured full transparency of the analytical process from raw data to final dashboard
+
+Even though this project was completed individually, Git and GitHub ensured reproducibility, maintainability, and readiness for future extensions (e.g. new datasets, predictive modelling, dashboard enhancements).
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
-## Tableau Public Deployment
+## Deployment
 
 This project’s analytical findings were deployed via **Tableau Public**, allowing the dashboard to be accessed online without the need for local setup or server hosting.
 
@@ -558,6 +561,30 @@ Tableau Public handles hosting and updates automatically. Any changes published 
 * Free and accessible via browser
 * Ideal for showcasing interactive visual analytics
 * Allows easy sharing with both technical and non-technical audiences
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
+## Credits
+
+### **Data & Content Sources**
+
+* **[Video Game Sales Dataset](https://www.kaggle.com/datasets/sidtwr/videogames-sales-dataset?select=Video_Games_Sales_as_at_22_Dec_2016.csv)** – Kaggle (public dataset used for analysis and reporting)
+* **Official Documentation**
+  * *Pandas*, *NumPy*, *SciPy*, *Plotly*, *Matplotlib*, *Seaborn* – for reference during data cleaning, numerical analysis, statistical testing and visualisations
+  * *[Tableau Public Documentation](https://help.tableau.com/current/pro/desktop/en-us/default.htm)* – for dashboard construction and parameter logic
+
+### **Tools & AI Assistance**
+
+* **ChatGPT** – used for idea refinement, interpreting statistical outputs, and enhancing clarity in written insights
+* **GitHub Copilot** – used to support code generation, syntax suggestions, and optimisation during Python development
+
+*All AI-assisted content was reviewed, tested, and adapted to ensure analytical accuracy and originality.*
+
+### **Media & Visual Assets**
+
+* All visual images and screenshots are my own work, created through Jupyter notebooks, Tableau dashboards, or custom graphics generated during analysis.
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ## Additional Information & Definitions
 
