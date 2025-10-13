@@ -133,6 +133,47 @@ This analysis will help **publishers, developers, and analysts** make evidence-b
 
 <p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
+## Application of Analytics in the Games Industry
+
+Data analytics plays a significant and expanding role in the video games industry, guiding strategic decisions across development, publishing, marketing, and player engagement. Through the analysis of historical sales, platform performance and review scores, this project demonstrates how analytics can support both commercial and creative outcomes within the sector.
+
+### **1. Sales Forecasting & Market Strategy**
+
+Publishers and platform holders use historical sales trends to forecast future performance. By analysing regional sales patterns and platform dominance (e.g. Nintendo in Japan vs Sony/Microsoft in the West), companies can:
+
+* Identify high-value markets
+* Decide which platforms to prioritise for new releases
+* Time launches during periods of peak consumer demand
+
+### **2. Platform & Exclusivity Decisions**
+
+Comparing **first-party vs third-party** performance helps inform exclusivity agreements. Strong first-party sales may encourage investment in in-house development, while multi-platform advantages may support broader distribution strategies.
+
+### **3. Impact of Reviews on Commercial Success**
+
+Analytics reveals how **critic and user sentiment** influence sales. Positive reviews can increase visibility and trust, while poor reception may harm long-term revenue. Understanding this relationship helps studios:
+
+* Allocate budget to quality assurance and polish
+* Use score predictions in revenue modelling
+* Prioritise post-launch updates based on feedback
+
+### **4. Genre & Audience Insights**
+
+Genre performance analysis helps identify audience preferences across regions. For example, sports and action titles may dominate global markets, while RPGs may perform better in Japan. These insights drive content roadmaps and targeted marketing.
+
+### **5. Future Role of AI and Predictive Analytics**
+
+The industry is increasingly adopting **machine learning and AI** to predict:
+
+* Player retention and in-game spending
+* Live service engagement trends
+* Sales based on pre-launch hype, wishlists, or social sentiment
+
+This project provides a foundation for such advancements, demonstrating how structured data analysis can answer real commercial questions in gaming.
+
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
 ## Hypothesis and how to validate
 
 ### Hypothesis 1 — **Critic reviews drive sales**
@@ -233,10 +274,46 @@ This project follows an **agile, sprint-based approach**, breaking the work into
 | **Sprint 5 — Dashboard Development**                    | **11 – 12 Oct** | Build an interactive Tableau dashboard to present sales patterns, platform comparisons, and review-driven trends in a clear, business-friendly format.                                        |
 | **Sprint 6 — Documentation & Wrap-up**                  | **13 Oct**      | Finalise the README with business requirements, methodology, and insights. Export cleaned CSV datasets and prepare the project for handover or stakeholder review.                            |
 
+The project was structured around **user stories**, managed through a GitHub Kanban board to maintain accountability and progress tracking. Each sprint delivered a specific analytical milestone, ensuring continuous refinement and adaptation based on findings.
 
-The project was structured around **user stories**, managed through a [GitHub Kanban board](https://github.com/users/stephenbeese/projects/11/views/1) to maintain accountability and progress tracking. Each sprint delivered a specific analytical milestone, ensuring continuous refinement and adaptation based on findings.
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
+
+
+## Project Management: Kanban Board & MoSCoW Prioritisation
+
+To manage my workflow effectively and maintain a structured approach throughout the project, I used a **Kanban board** combined with **MoSCoW prioritisation**. This approach helped me plan, track progress and ensure that essential analytical tasks were completed in a controlled and professional manner.
+
+### **Kanban Workflow**
+
+You can find my Kanban board [here](https://github.com/users/stephenbeese/projects/11/views/1)
+
+My Kanban board followed the stages commonly used in agile data projects:
+
+| Stage           | Purpose                                                                           |
+| --------------- | --------------------------------------------------------------------------------- |
+| **Backlog**     | Ideas, research questions and potential tasks yet to be scheduled                 |
+| **Ready**       | Refined and prioritised tasks fully defined and ready for execution               |
+| **In Progress** | Tasks actively being worked on, such as ETL, visualisation, or hypothesis testing |
+| **In Review**   | Completed tasks awaiting verification, refinement or documentation                |
+| **Done**        | Finalised work, approved and integrated into the project deliverables             |
+
+This structure allowed me to maintain clear visibility over each component of the project — from data preparation to Tableau dashboard publication — ensuring nothing was overlooked or rushed.
+
+### **MoSCoW Prioritisation of Tasks and Features**
+
+I organised user stories and analytical tasks using the **MoSCoW method**, to distinguish between essential components and enhancements:
+
+| Priority        | Purpose                                                         | Examples in This Project                                                                           |
+| --------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Must Have**   | Core deliverables essential to a complete data analysis project | Data cleaning (ETL), KPI exploration, hypothesis testing, Tableau dashboard                        |
+| **Should Have** | Important features that strengthen analysis and credibility     | Statistical validation (ANOVA, t-tests), first vs third-party comparisons, documentation in README |
+| **Could Have**  | Enhancements that add insight or improve user experience        | Log-scale visualisations, genre deep-dives, interactive tooltips, supplementary plots in PLOTS.md  |
+
+Using Kanban with MoSCoW ensured a controlled and transparent workflow, a focus on analytical depth rather than unnecessary complexity and the delivery of a professional, stakeholder-ready output
 
 Screenshots of the Kanban board during the development process can be found [here](images/kanban/).
+
+<p align="right"><a href="#video-game-sales-analysis">Back to Top</a></p>
 
 ---
 
