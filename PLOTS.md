@@ -69,7 +69,13 @@ Bar charts showing total cumulative sales for first-party and third-party games 
 ---
 
 ### 12. Global Sales Overview - First party vs Third party
-![## Global Sales Overview - First party vs Third party](images/visualisations/global_sales_first_vs_third_party.png)  
+![Global Sales Overview - First party vs Third party](images/visualisations/global_sales_first_vs_third_party.png)  
 Side-by-side comparison of total and average global sales for first-party and third-party games.
+
+---
+
+### 13. Share of Games with Sales > 1 Million Units
+![Share of Games with Sales > 1 Million Units](images/visualisations/probability_high_sales_pie_chart.png)  
+Pie chart to show the probability of releasing a game that sells over 1M units
 
 ---
